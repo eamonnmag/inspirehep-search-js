@@ -1,0 +1,17 @@
+<div class="row" ng-repeat="record in vm.invenioSearchResults.hits.hits track by $index">
+    <div class="col-md-12">
+        <div id="panel-default-brief" class="panel panel-default">
+            <div class="panel-body">
+                <div class="row-fluid">
+                    <div class="col-md-12 ">
+                        <h4 class="custom-h">
+                            <a class="title" ng-href="/institutions/{{ record.id }}">
+                                {{ record.metadata.institution[0] }}
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

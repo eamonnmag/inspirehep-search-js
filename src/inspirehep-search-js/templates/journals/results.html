@@ -1,0 +1,24 @@
+<div class="row" ng-repeat="record in vm.invenioSearchResults.hits.hits track by $index">
+    <div class="col-md-12">
+        <div id="panel-default-brief" class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-9 left-column">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="custom-h">
+                                    <a class="title" ng-href="/journals/{{ record.id }}">
+                                        {{ record.metadata.title }}
+                                    </a>
+                                </h4>
+                                <div class="col-md-12 ">
+                                    Published by {{ record.metadata.publisher[0] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
