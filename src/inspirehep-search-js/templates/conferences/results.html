@@ -39,6 +39,10 @@
                             <a href="/search?q=&cc=conferences&series={{ record.metadata.series[0] }}">
                                 {{ record.metadata.series[0] }}
                             </a> series.
+
+                            <a class="conf-link pull-right" ng-if="record.metadata.url[0]" ng-href="record.metadata.url[0][0]">
+                                  Go to conference website
+                            </a>
                         </p>
 
 
